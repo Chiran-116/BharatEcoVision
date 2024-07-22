@@ -6,49 +6,20 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
-
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background-color:white;
-  font-family: 'Poppins', sans-serif;
+  background-color: white;
 }
 
 /* Header Styles */
-
-.parallax {
-  height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -30px; /* Adjust the value as needed */
-}
-
-
-.parallax h1 {
-  font-size: 80px;
-  position: absolute;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.parallax img {
-  position: absolute;
-  width: 100vw;
-}
-
-
 /* Header Styles */
 header {
-  background-color:white(0 100% 0% / 0.744);
+  background-color: rgba(255, 255, 255, 0.74); /* Adjusted for readability */
   display: flex;
   justify-content: space-between; /* Distributes space between items */
   align-items: center;
   padding: 20px;
-
 }
 
 .logo {
@@ -66,7 +37,6 @@ header {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  justify-content: center; /* Centers navigation horizontally */
 }
 
 .nav ul {
@@ -89,26 +59,54 @@ header {
 .auth-buttons {
   display: flex;
   align-items: center;
-  margin-right: auto; /* Pushes buttons to the far right */
+  margin-left: auto; /* Pushes buttons to the far right */
 }
 
+/* Auth Buttons Styles */
+/* Auth Buttons Styles */
 .auth-buttons button {
-  margin-right: auto;
+  margin-left: 10px; /* Space between buttons */
   padding: 12px 25px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #28a745; /* Adjust background color as needed */
-  color: #fff; /* Adjust text color as needed */
-  font-size: 1em; /* Adjust font size as needed */
+  color: #fff; /* Text color */
+  font-size: 1em; /* Font size */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+}
+
+/* Initial background colors for buttons */
+.register {
+  background-color: #28a745; /* Green for Register button */
+}
+
+#loginButton {
+  background-color: #007bff; /* Blue for Login button */
+}
+
+/* Hover effect for the "Register" button */
+.register:hover {
+  background-color: #218838 !important;
+  color: #e0e0e0 !important;
+}
+
+.login:hover {
+  background-color: #125586 !important;
+  color: #e0e0e0 !important;
 }
 
 
+
+
+
+/* Hero Section Styles */
 /* Hero Section Styles */
 .hero {
   position: relative;
   height: 100vh;
   background: url('/static/images/video.mp4') center center/cover no-repeat;
+  overflow: hidden; /* Ensures no overflow issues with video */
+ 
 }
 
 #bg-video {
@@ -118,37 +116,115 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: -1; /* Puts video behind other content */
 }
 
 .hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 1; /* Keeps text above the video */
   text-align: center;
   color: #fff;
-  margin-top: 20%;
+  padding: 20px; /* Add padding if needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  height: 100%; /* Full height to center content */
+  margin-top: -20px;
 }
+
+.hero-content h1, .hero-content p {
+  transition: transform 0.5s ease, color 0.5s ease;
+  
+}
+
+.hero-content h1 {
+  font-size: 3.5em; /* Adjust font size as needed */
+  cursor: default;
+}
+
+.hero-content p {
+  font-size: 1.5em; /* Adjust font size as needed */
+  cursor: default;
+}
+
+.hero-content h1:hover {
+  transform: scale(1.1);
+  color: #34f312d6;
+  font-size: 4em; /* Change color on hover */
+}
+
+.hero-content p:hover {
+  transform: scale(1.05);
+  color: #ecf0f1; /* Change color on hover */
+}
+
 
 .hero-buttons button {
   margin: 10px;
-  padding: 10px 20px;
+  padding: 15px 30px; /* Increased padding for larger button */
   border: none;
-  border-radius: 5px;
+  border-radius: 8px; /* Slightly larger border radius */
   cursor: pointer;
   background-color: #28a745;
   color: #fff;
+  font-size: 1.2em; /* Increased font size */
+  margin-top: 20px;
 }
+
+.hero-buttons button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
 
 /* Green Credits Section */
+/* Green Credits Section */
 .green-credits {
-  text-align: center;
   padding: 50px 20px;
+  background: #e0f2f1; /* Light green background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Light shadow for depth */
 }
 
-.green-credits img {
-  max-width: 100%;
+.green-credits-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px; /* Space between image and text */
+}
+
+.green-credits-img {
+  max-width: 80%; /* Adjust based on your design */
   height: auto;
 }
+
+.green-credits-text {
+  max-width: 80%; /* Adjust based on your design */
+  background-color: #ffffff; /* White background for text box */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for better separation */
+  text-align: justify;
+  font-size: 1.3em; /* Increased font size */
+}
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .green-credits-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .green-credits-img {
+    max-width: 100%;
+  }
+
+  .green-credits-text {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
 
 /* Row and Column Styles */
 .row {
@@ -250,33 +326,127 @@ h1 {
   padding: 20px 0;
 }
 
-.activity-cards .card {
-  width: 100px;
-  height: 250px;
-  margin: 0;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.activity-item {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.activity-item img {
+  width: 100%;
+  height: auto;
+  display: block;
   transition: transform 0.3s ease;
 }
-
-.activity-cards .card:hover {
-  transform: translateY(-5px);
+/* Activities Section Styles */
+.activities {
+  text-align: center; /* Center the text in the section */
+  padding: 20px 0;
 }
 
-.activity-cards .card img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 0 auto 15px;
+.activities h3 {
+  font-size: 2.5em; /* Increase font size */
+  margin-bottom: 20px;
+ 
+  color: #28a745;
 }
 
-/* Team Container Styles */
+/* Ensure activity items are centered */
+.activity-cards {
+  display: flex;
+  justify-content: center; /* Center activity items horizontally */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.activity-item:hover .text-overlay {
+  opacity: 1;
+}
+
+.activity-item:hover img {
+  transform: scale(1.1);
+}
+
+.activity-item:hover {
+  transform: scale(1.05);
+}
+
+.where-creating-forests {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.where-creating-forests h2 {
+  font-size: 3.5em;
+  color: #083b00;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif; /* Stylish font for headings */
+  font-weight: 700; /* Bold font weight */
+}
+
+.where-creating-forests {
+  background-color: #f0f8f0; /* Light green background */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.where-creating-forests h1,
+.where-creating-forests h2 {
+  color: #04500c; /* Dark text color */
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.where-creating-forests ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping to new lines if needed */
+  gap: 20px; /* Space between items */
+}
+
+.where-creating-forests ul li {
+  font-size: 1.5em;
+  color: #28a745;
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icon and text */
+  font-family: 'Lora', serif; /* Stylish font for list items */
+  font-weight: 400; /* Normal font weight */
+  margin-bottom: 10px; /* Space between list items */
+}
+
+.where-creating-forests img.icon {
+  width: 90px; /* Size of the icon */
+  height: 90px; /* Size of the icon */
+  object-fit: contain;
+  flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+
+
+
+
+
 
 /* Team Container Styles */
 .team-container {
@@ -324,7 +494,6 @@ h1 {
   display: block;
 }
 
-/* Ensure text is centered properly */
 .team-member .card h3 {
   font-size: 1.5em;
   margin: 10px 0;
@@ -338,9 +507,6 @@ h1 {
 .team-member .card .icons {
   margin-top: 15px;
 }
-
-
-
 
 /* Footer Styles */
 .footer {
@@ -363,86 +529,20 @@ h1 {
 /* Media Queries */
 @media screen and (min-width: 768px) {
   section {
-      padding: 1em 7em;
+    padding: 1em 7em;
   }
 }
 
 @media screen and (min-width: 992px) {
   section {
-      padding: 1em;
+    padding: 1em;
   }
   .card {
-      padding: 5em 1em;
+    padding: 5em 1em;
   }
   .column {
-      flex: 0 0 33.33%;
-      max-width: 33.33%;
-      padding: 0 1em;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1em;
   }
-}
-
-
-
-.image-container img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: opacity 0.3s;
-}
-
-
-
-
-
-
-
-/* Activity Cards Styles */
-.activity-cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px 0;
-}
-
-.activity-item {
-  position: relative;
-  width: 100%;
-  max-width: 300px; /* Adjust the width as needed */
-  overflow: hidden;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.activity-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.text-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.activity-item:hover .text-overlay {
-  opacity: 1;
-}
-
-.activity-item:hover img {
-  transform: scale(1.1); /* Zoom in effect */
-}
-
-.activity-item:hover {
-  transform: scale(1.05); /* Optional: slightly scale up the card itself */
 }
