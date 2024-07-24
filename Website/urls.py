@@ -22,15 +22,14 @@ urlpatterns = [
     path("", views.index, name="index"),
     path("login", views.login, name="login"),
     path("land-inventory",views.land_inventory,name="land_inventory"),
-    path("applicant",views.applicant,name='applicant')
-    # path("all_stu", views.all_stu, name="all_stu"),
-    # path("add_stu", views.add_stu, name="add_stu"),
-    # path("rm_stu", views.rm_stu, name="rm_stu"),
-    # path('rm_stu/<str:USN>/', views.rm_stu, name='rm_stu_detail'),
-    # path("filter_stu", views.filter_stu, name="filter_stu"),
-    # path('take_attendance', views.take_attendance, name='take_attendance'),
-    # path('view_attendance', views.view_attendance, name='view_attendance'),
-    # path('course_attendance', views.course_attendance, name='course_attendance'),
-    # path('course_attendance/<int:Course_id>/<str:date>/', views.course_attendance, name='course_attendance_report'),
-    # path('course_attendance_shortage',views.course_attendance_shortage,name = "course_attendance_shortage")
+    path("applicant",views.applicant,name='applicant'),
+    path("app_payment", views.app_payment, name="app_payment"),
+    path("app_profile", views.app_profile, name="app_profile"),
+    path("app_status", views.app_status, name="app_status"),
+
+    path("contact_us",views.contact_us,name="contact_us"),
+    path("drone",views.drone,name='drone'),
+    path("implementing_home", views.implementing_home, name="implementing_home"),
+    path("nodal", views.nodal, name="nodal")
+    
 ]

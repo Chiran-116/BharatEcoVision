@@ -28,3 +28,24 @@ def land_inventory(request):
 
 def applicant(request):
     return render(request,"applicant.html")
+
+def app_payment(request):
+    return render(request,"app_payment.html")
+
+def app_profile(request):
+    return render(request,"app_profile.html")
+
+def drone(request):
+    return render(request,"drone.html")
+
+def contact_us(request):
+    return render(request,"contact_us.html")
+
+def app_status(request):
+    return render(request,"app_status.html")
+
+def implementing_home(request):
+    return render(request,"implementing_home.html")
+
+def nodal(request):
+    return render(request,"nodal.html")
