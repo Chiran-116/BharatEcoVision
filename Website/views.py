@@ -49,3 +49,24 @@ def implementing_home(request):
 
 def nodal(request):
     return render(request,"nodal.html")
+
+def app_apply(request):
+    return render(request,"app_apply.html")
+
+def imp_apply(request):
+    return render(request,"imp_apply.html")
+
+def imp_profile(request):
+    return render(request,"imp_profile.html")
+
+
+
+def imp_transaction(request):
+    return render(request,"imp_transaction.html")
+
+def nod_drone(request):
+    return render(request,"nod_drone.html")
+
+def nod_profile(request):
+    return render(request,"nod_profile.html")
+
