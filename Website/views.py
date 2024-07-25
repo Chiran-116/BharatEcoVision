@@ -73,4 +73,10 @@ def nod_profile(request):
 def documentation(request):
     return render(request,"documentation.html")
 
+def earn(request):
+    return render(request,"earn.html")
+
+def ind(request):
+    return render(request,"ind.html")
+
 

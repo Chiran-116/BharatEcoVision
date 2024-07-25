@@ -20,6 +20,10 @@ urlpatterns = [
 
     path('imp_transaction', views.imp_transaction, name='imp_transaction'),
     path('nod_drone', views.nod_drone, name='nod_drone'),
-    path('documentation', views.documentation, name='documentation')
+    path('documentation', views.documentation, name='documentation'),
+    path('earn', views.earn, name='earn'),
+    path('ind', views.ind, name='ind')
+
+
 
 ]
