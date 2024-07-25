@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Credit Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .resized-image {
+            width: 100%;
+            height: auto;
+            max-width: 600px; /* Set the maximum width */
+            display: block;
+            margin: 0 auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #f1f1f1;
+        }
+    </style>
+        <link rel="stylesheet" href="/static/css/styles.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="/static/images/logo.png" alt="EcoVision Logo" href="/">
+                <span> भारत EcoVision</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#aboutus">About</a></li>
+                    <li><a href="#earn">Earn Green Credits</a></li>
+                    <li><a href="/land-inventory">Projects</a></li>
+                    <li><a href="#getgcp">Grypto</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="register">Register</button>
+                <button class="login" id="loginButton">Login</button>
+                <button onclick="window.location.href='/documentation'">Documentation</button>
+
+            </div>
+        </div>
+    </header>
+     <main>
+        <section id="workflow">
+            <h2>Workflow</h2>
+            <img src="static/images/workflow.png" alt="Workflow Image" class="resized-image">
+        </section>
+        <section id="drone-technology">
+            <h2>Drone Technology</h2>
+            <img src="static/images/drone_technology.png" alt="Drone Technology Image" class="resized-image">
+        </section>
+        <section id="business-model">
+            <h2>Business Model</h2>
+            <img src="static/images/business_model.png" alt="Business Model Image" class="resized-image">
+        </section>
+    </main>   
+      <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#aboutus">About Us</a>
+            <a href="#faqs">FAQs</a>
+            <a href="#contactus">Contact Us</a>
+            <a href="#followus">Follow Us</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="/static/images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="/static/images/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="/static/images/instagram.svg" alt="Instagram"></a>
+        </div>
+    </footer>
+    
+    <!-- Include script.js at the end -->
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

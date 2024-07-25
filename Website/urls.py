@@ -19,6 +19,7 @@ urlpatterns = [
     path('imp_profile', views.imp_profile, name='imp_profile'),
 
     path('imp_transaction', views.imp_transaction, name='imp_transaction'),
-    path('nod_drone', views.nod_drone, name='nod_drone')
+    path('nod_drone', views.nod_drone, name='nod_drone'),
+    path('documentation', views.documentation, name='documentation')
 
 ]

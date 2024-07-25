@@ -70,3 +70,7 @@ def nod_drone(request):
 def nod_profile(request):
     return render(request,"nod_profile.html")
 
+def documentation(request):
+    return render(request,"documentation.html")
+
+

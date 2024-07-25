@@ -7,13 +7,27 @@
     <link rel="stylesheet" href="/static/css/styles.css">
     <!-- Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-   
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <style>
+        /* Specific Style for Documentation Button */
+        .documentation-button {
+            background-color: #007bff; /* Blue background for Documentation */
+            color: white; /* White text */
+            border: none; /* Remove border */
+            padding: 10px 20px; /* Add padding */
+            font-size: 16px; /* Font size */
+            cursor: pointer; /* Pointer cursor on hover */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth color transition */
+        }
 
+        .documentation-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -34,9 +48,14 @@
             <div class="auth-buttons">
                 <button class="register">Register</button>
                 <button class="login" id="loginButton">Login</button>
+                <button class="documentation-button" onclick="window.location.href='/documentation'">Documentation</button>
             </div>
         </div>
     </header>
+
+
+
+
       <!-- Parallax section starts here-->
          <!--
       <section class="parallax">
