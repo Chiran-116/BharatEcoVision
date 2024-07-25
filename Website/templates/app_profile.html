@@ -70,7 +70,7 @@
                 aria-controls="offcanvasExample">
                 <span class="navbar-toggler-icon" data-bs-target="#sidebar"></span>
             </button>
-            <a class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold" href="#">
+            <a class="navbar-brand me-auto ms-lg-0 ms-3 text-uppercase fw-bold" href="/">
                 <img src="static/images/logo.png" alt="Logo" class="me-2" style="max-height: 30px;">
                 <!---BHARAT ECOVISION-->
             </a>
@@ -108,98 +108,100 @@
     <!-- top navigation bar -->
     <!-- offcanvas -->
 
-    <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="sidebar"
-        style="background-image: linear-gradient(to left, #2a7d65, #5aaa75);">
-
-        <div class="offcanvas-body p-0">
-            <nav class="navbar-dark">
-                <ul class="navbar-nav">
-                    <li>
-                        <br>
-                        <div class="text-dark small fw-bold text-uppercase px-3">
-                            CORE
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link px-3 active text-dark">
-                            <span class="me-2"><i class="bi bi-speedometer2"></i></span>
-                            <span>Dashboard</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="land-inventory" class="nav-link px-3 active text-dark">
-                            <span class="me-2"><i class="bi bi-house-door"></i></span>
-                            <span>Back to Home</span>
-                        </a>
-                    </li>
-                    <li class="my-4">
-                        <hr class="dropdown-divider bg-light" />
-                    </li>
-                    <li>
-                        <div class="text-dark small fw-bold text-uppercase px-3 mb-3">
-                            Interface
-                        </div>
-                    </li>
-                    <li>
-                        <a class="nav-link px-3 sidebar-link text-dark" data-bs-toggle="collapse" href="#">
-                            <span class="me-2"><i class="bi bi-layout-split"></i></span>
-                            <span>Apply For Land</span>
-                            <span class="ms-auto">
-                                <span class="right-icon">
-                                    <i class="bi bi-chevron-down"></i>
-                                </span>
+    
+<div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="sidebar" style="background-image: linear-gradient(to left, #2a7d65, #5aaa75);">
+    <div class="offcanvas-body p-0">
+        <nav class="navbar-dark">
+            <ul class="navbar-nav">
+                <li>
+                    <br>
+                    <div class="text-dark small fw-bold text-uppercase px-3">
+                        CORE
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="nav-link px-3 active text-dark">
+                        <span class="me-2"><i class="bi bi-speedometer2"></i></span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="land-inventory" class="nav-link px-3 active text-dark">
+                        <span class="me-2"><i class="bi bi-house-door"></i></span>
+                        <span>Back to Home</span>
+                    </a>
+                </li>
+                <li class="my-4">
+                    <hr class="dropdown-divider bg-light" />
+                </li>
+                <li>
+                    <div class="text-dark small fw-bold text-uppercase px-3 mb-3">
+                        Interface
+                    </div>
+                </li>
+                <li>
+                    <a class="nav-link px-3 sidebar-link text-dark" data-bs-toggle="collapse" href="#layouts" aria-expanded="false">
+                        <span class="me-2"><i class="bi bi-layout-split"></i></span>
+                        <span>Apply For Land</span>
+                        <span class="ms-auto">
+                            <span class="right-icon">
+                                <i class="bi bi-chevron-down"></i>
                             </span>
-                        </a>
-                        <div class="collapse" id="layouts">
-                            <ul class="navbar-nav ps-3">
-                              <li>
+                        </span>
+                    </a>
+                    <div class="collapse" id="layouts">
+                        <ul class="navbar-nav ps-3">
+                            <li>
                                 <a href="app_apply" class="nav-link px-3 text-dark">
-                                  <span class="me-2"><i class="bi bi-file-earmark-plus"></i></span>
-                                  <span>New+</span>
+                                    <span class="me-2"><i class="bi bi-file-earmark-plus"></i></span>
+                                    <span>New+</span>
                                 </a>
+                            </li>
+                            <li>
                                 <a href="#" class="nav-link px-3 text-dark">
                                     <span class="me-2"><i class="bi bi-file-earmark-plus"></i></span>
                                     <span>Existing</span>
-                                  </a>
-                                  <a href="#" class="nav-link px-3 text-dark">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-3 text-dark">
                                     <span class="me-2"><i class="bi bi-file-earmark-plus"></i></span>
-                                    <span>try ML model</span>
-                                  </a>
-                              </li>
-                            </ul>
-                          </div>
-                    </li>
-                    <li>
-                        <a href="app_status" class="nav-link px-3 text-dark">
-                            <span class="me-2"><i class="bi bi-list-check"></i></span>
-                            <span>Application Status</span>
-                        </a>
-                    </li>
-                    <li class="my-4">
-                        <hr class="dropdown-divider bg-light" />
-                    </li>
-                    <li>
-                        <div class="text-dark small fw-bold text-uppercase px-3 mb-3">
-                            Addons
-                        </div>
-                    </li>
-                    <li>
-                        <a href="app_payment" class="nav-link px-3 text-dark">
-                            <span class="me-2"><i class="bi bi-receipt"></i></span>
-                            <span>Payment History</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact_us" class="nav-link px-3 text-dark">
-                            <span class="me-2"><i class="bi bi-headset"></i></span>
-                            <span>Contact Support</span>
-                        </a>
-                    </li>
-                    
-                </ul>
-            </nav>
-        </div>
+                                    <span>Try ML Model</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="app_status" class="nav-link px-3 text-dark">
+                        <span class="me-2"><i class="bi bi-list-check"></i></span>
+                        <span>Application Status</span>
+                    </a>
+                </li>
+                <li class="my-4">
+                    <hr class="dropdown-divider bg-light" />
+                </li>
+                <li>
+                    <div class="text-dark small fw-bold text-uppercase px-3 mb-3">
+                        Addons
+                    </div>
+                </li>
+                <li>
+                    <a href="app_payment" class="nav-link px-3 text-dark">
+                        <span class="me-2"><i class="bi bi-receipt"></i></span>
+                        <span>Payment History</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact_us" class="nav-link px-3 text-dark">
+                        <span class="me-2"><i class="bi bi-headset"></i></span>
+                        <span>Contact Support</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </div>
+</div>
 
 
 
